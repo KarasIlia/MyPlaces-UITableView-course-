@@ -11,6 +11,7 @@
 		DE1EE467227E3A7F0020F815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1EE465227E3A7F0020F815 /* Main.storyboard */; };
 		DE1EE469227E3A810020F815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1EE468227E3A810020F815 /* Assets.xcassets */; };
 		DE1EE46C227E3A810020F815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1EE46A227E3A810020F815 /* LaunchScreen.storyboard */; };
+		DEBDFD302307450E0097C16B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDFD2F2307450E0097C16B /* CustomTableViewCell.swift */; };
 		DED61895227E3F1B00363C78 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED61894227E3F1B00363C78 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		DE1EE468227E3A810020F815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE1EE46B227E3A810020F815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE1EE46D227E3A810020F815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBDFD2F2307450E0097C16B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		DED61894227E3F1B00363C78 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 			children = (
 				DE1EE461227E3A7F0020F815 /* AppDelegate.swift */,
 				DED61894227E3F1B00363C78 /* MainViewController.swift */,
+				DEBDFD2F2307450E0097C16B /* CustomTableViewCell.swift */,
 				DE1EE465227E3A7F0020F815 /* Main.storyboard */,
 				DE1EE468227E3A810020F815 /* Assets.xcassets */,
 				DE1EE46A227E3A810020F815 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBDFD302307450E0097C16B /* CustomTableViewCell.swift in Sources */,
 				DE1EE462227E3A7F0020F815 /* AppDelegate.swift in Sources */,
 				DED61895227E3F1B00363C78 /* MainViewController.swift in Sources */,
 			);
