@@ -90,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="585.50724637681162" y="-16.071428571428569"/>
         </scene>
-        <!--New place-->
+        <!--New Place-->
         <scene sceneID="Jwf-nO-o56">
             <objects>
                 <tableViewController id="jO5-o1-bvO" customClass="NewPlaceViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
@@ -239,16 +239,24 @@
                             <outlet property="delegate" destination="jO5-o1-bvO" id="b9e-KI-93b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New place" id="jtB-7s-bNo">
+                    <navigationItem key="navigationItem" title="New Place" id="jtB-7s-bNo">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="qrf-i2-9hT">
                             <connections>
-                                <segue destination="CDS-78-MGK" kind="unwind" unwindAction="cancelAction:" id="lgP-uo-hgR"/>
+                                <action selector="cancelAction:" destination="jO5-o1-bvO" id="HDO-ZX-4sk"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="qBw-eB-Hyn"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="qBw-eB-Hyn">
+                            <connections>
+                                <segue destination="CDS-78-MGK" kind="unwind" unwindAction="unwindSegue:" id="40F-3N-kmE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="imageOfPlace" destination="j0L-jZ-oLl" id="OTw-v1-8ST"/>
+                        <outlet property="placeImage" destination="j0L-jZ-oLl" id="OTw-v1-8ST"/>
+                        <outlet property="placeLocation" destination="wkP-L6-CUn" id="Ehf-z2-wL4"/>
+                        <outlet property="placeName" destination="pZF-vr-Qkw" id="Sgn-qD-Uwv"/>
+                        <outlet property="placeType" destination="zGg-09-272" id="tAc-9e-Fbh"/>
+                        <outlet property="saveButton" destination="qBw-eB-Hyn" id="6Ey-LA-eX4"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgH-0a-U0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
