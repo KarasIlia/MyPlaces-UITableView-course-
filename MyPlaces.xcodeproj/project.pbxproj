@@ -77,25 +77,21 @@
 		DE1EE460227E3A7F0020F815 /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
+				DE4DD457230AF09000DC231A /* Other */,
 				DE4DD4552309DAEB00DC231A /* Model */,
-				DE4DD4542309DAD900DC231A /* Controllers */,
-				DE1EE461227E3A7F0020F815 /* AppDelegate.swift */,
-				DE4DD4522309D5E700DC231A /* StorageManager.swift */,
-				DE1EE465227E3A7F0020F815 /* Main.storyboard */,
-				DE1EE468227E3A810020F815 /* Assets.xcassets */,
-				DE1EE46A227E3A810020F815 /* LaunchScreen.storyboard */,
-				DE1EE46D227E3A810020F815 /* Info.plist */,
+				DE4DD456230AF06500DC231A /* View */,
+				DE4DD4542309DAD900DC231A /* Controller */,
 			);
 			path = MyPlaces;
 			sourceTree = "<group>";
 		};
-		DE4DD4542309DAD900DC231A /* Controllers */ = {
+		DE4DD4542309DAD900DC231A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				DED61894227E3F1B00363C78 /* MainViewController.swift */,
 				DEBDFD3523087DE00097C16B /* NewPlaceViewController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		DE4DD4552309DAEB00DC231A /* Model */ = {
@@ -105,6 +101,26 @@
 				DEBDFD2F2307450E0097C16B /* CustomTableViewCell.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DE4DD456230AF06500DC231A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE1EE465227E3A7F0020F815 /* Main.storyboard */,
+				DE1EE46A227E3A810020F815 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE4DD457230AF09000DC231A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DE1EE461227E3A7F0020F815 /* AppDelegate.swift */,
+				DE4DD4522309D5E700DC231A /* StorageManager.swift */,
+				DE1EE468227E3A810020F815 /* Assets.xcassets */,
+				DE1EE46D227E3A810020F815 /* Info.plist */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		F23078E590E81E4C804942A2 /* Pods */ = {
@@ -385,7 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4RUCTZF9T9;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPlaces/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,7 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4RUCTZF9T9;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPlaces/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
