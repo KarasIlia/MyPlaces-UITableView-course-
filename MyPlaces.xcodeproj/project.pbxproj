@@ -81,7 +81,6 @@
 				DE4DD4542309DAD900DC231A /* Controllers */,
 				DE1EE461227E3A7F0020F815 /* AppDelegate.swift */,
 				DE4DD4522309D5E700DC231A /* StorageManager.swift */,
-				DEBDFD2F2307450E0097C16B /* CustomTableViewCell.swift */,
 				DE1EE465227E3A7F0020F815 /* Main.storyboard */,
 				DE1EE468227E3A810020F815 /* Assets.xcassets */,
 				DE1EE46A227E3A810020F815 /* LaunchScreen.storyboard */,
@@ -103,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBDFD3123086E0D0097C16B /* PlaceModel.swift */,
+				DEBDFD2F2307450E0097C16B /* CustomTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
