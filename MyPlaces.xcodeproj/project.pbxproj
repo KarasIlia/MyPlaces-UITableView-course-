@@ -16,6 +16,7 @@
 		DEBDFD302307450E0097C16B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDFD2F2307450E0097C16B /* CustomTableViewCell.swift */; };
 		DEBDFD3223086E0D0097C16B /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDFD3123086E0D0097C16B /* PlaceModel.swift */; };
 		DEBDFD3623087DE00097C16B /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDFD3523087DE00097C16B /* NewPlaceViewController.swift */; };
+		DED3B027230C4DA400240DB8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED3B026230C4DA400240DB8 /* MapViewController.swift */; };
 		DED61895227E3F1B00363C78 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED61894227E3F1B00363C78 /* MainViewController.swift */; };
 		F17FA685226AC94691936C7B /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DFCDA10241B2BFB7D5544 /* Pods_MyPlaces.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		DEBDFD2F2307450E0097C16B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		DEBDFD3123086E0D0097C16B /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		DEBDFD3523087DE00097C16B /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
+		DED3B026230C4DA400240DB8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DED61894227E3F1B00363C78 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 			children = (
 				DED61894227E3F1B00363C78 /* MainViewController.swift */,
 				DEBDFD3523087DE00097C16B /* NewPlaceViewController.swift */,
+				DED3B026230C4DA400240DB8 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				DE4DD4532309D5E700DC231A /* StorageManager.swift in Sources */,
 				DE1EE462227E3A7F0020F815 /* AppDelegate.swift in Sources */,
 				DED61895227E3F1B00363C78 /* MainViewController.swift in Sources */,
+				DED3B027230C4DA400240DB8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
