@@ -73,7 +73,6 @@
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Place name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZF-vr-Qkw">
                                                             <rect key="frame" x="0.0" y="37" width="382" height="25.5"/>
-                                                            <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             <connections>
@@ -109,7 +108,6 @@
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Place location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-L6-CUn">
                                                             <rect key="frame" x="0.0" y="37" width="382" height="25.5"/>
-                                                            <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             <connections>
@@ -145,7 +143,6 @@
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Place type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zGg-09-272">
                                                             <rect key="frame" x="0.0" y="37" width="382" height="25.5"/>
-                                                            <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             <connections>
@@ -246,6 +243,17 @@
                                     <action selector="closeVC" destination="WcQ-6g-Vy4" eventType="touchUpInside" id="3dH-c2-P0q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99r-b0-Ddj">
+                                <rect key="frame" x="324" y="772" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="SXo-8Z-FgA"/>
+                                    <constraint firstAttribute="height" constant="50" id="lLw-IH-wer"/>
+                                </constraints>
+                                <state key="normal" image="Location"/>
+                                <connections>
+                                    <action selector="centerVeiwInUserLocation" destination="WcQ-6g-Vy4" eventType="touchUpInside" id="6dB-QF-mLT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -253,7 +261,9 @@
                             <constraint firstItem="VE1-Ga-FWm" firstAttribute="trailing" secondItem="3Bp-RE-UMY" secondAttribute="trailing" constant="40" id="6XS-tP-yCQ"/>
                             <constraint firstItem="6Kw-h5-9td" firstAttribute="trailing" secondItem="VE1-Ga-FWm" secondAttribute="trailing" id="74T-lr-o34"/>
                             <constraint firstItem="6Kw-h5-9td" firstAttribute="top" secondItem="y6n-8r-JOo" secondAttribute="top" id="UWz-nS-GWI"/>
+                            <constraint firstItem="VE1-Ga-FWm" firstAttribute="trailing" secondItem="99r-b0-Ddj" secondAttribute="trailing" constant="40" id="g4f-R2-dWb"/>
                             <constraint firstAttribute="bottom" secondItem="6Kw-h5-9td" secondAttribute="bottom" id="isE-yM-rEf"/>
+                            <constraint firstItem="VE1-Ga-FWm" firstAttribute="bottom" secondItem="99r-b0-Ddj" secondAttribute="bottom" constant="40" id="r3P-mJ-e3p"/>
                             <constraint firstItem="6Kw-h5-9td" firstAttribute="leading" secondItem="VE1-Ga-FWm" secondAttribute="leading" id="se2-yj-Nm6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VE1-Ga-FWm"/>
@@ -444,6 +454,7 @@
     </scenes>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="Location" width="128" height="128"/>
         <image name="Photo" width="195" height="196"/>
         <image name="cancel" width="128" height="128"/>
         <image name="emptyStar" width="255" height="256"/>
