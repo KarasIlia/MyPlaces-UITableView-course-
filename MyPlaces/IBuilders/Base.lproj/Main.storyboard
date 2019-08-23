@@ -30,7 +30,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="j0L-jZ-oLl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="249.50000000000006"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="249.5"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGp-A1-kri">
@@ -290,6 +290,17 @@
                                     <action selector="centerVeiwInUserLocation" destination="WcQ-6g-Vy4" eventType="touchUpInside" id="6dB-QF-mLT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljA-Qe-Cnq">
+                                <rect key="frame" x="182" y="772" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DtO-Bm-Rxa"/>
+                                    <constraint firstAttribute="height" constant="50" id="kjj-yX-LYD"/>
+                                </constraints>
+                                <state key="normal" image="GetDirection"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="WcQ-6g-Vy4" eventType="touchUpInside" id="nsi-Ui-GTS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -301,6 +312,7 @@
                             <constraint firstItem="c4u-Gm-1sn" firstAttribute="centerX" secondItem="y6n-8r-JOo" secondAttribute="centerX" id="IEp-ws-ewY"/>
                             <constraint firstItem="qlC-5g-pot" firstAttribute="leading" secondItem="VE1-Ga-FWm" secondAttribute="leading" constant="20" id="OVx-kG-tC7"/>
                             <constraint firstItem="c4u-Gm-1sn" firstAttribute="centerY" secondItem="y6n-8r-JOo" secondAttribute="centerY" constant="-20" id="OlY-66-kJp"/>
+                            <constraint firstItem="VE1-Ga-FWm" firstAttribute="bottom" secondItem="ljA-Qe-Cnq" secondAttribute="bottom" constant="40" id="RfA-02-0JM"/>
                             <constraint firstItem="VE1-Ga-FWm" firstAttribute="trailing" secondItem="99r-b0-Ddj" secondAttribute="trailing" constant="40" id="STP-7S-PDn"/>
                             <constraint firstItem="6Kw-h5-9td" firstAttribute="top" secondItem="y6n-8r-JOo" secondAttribute="top" id="UWz-nS-GWI"/>
                             <constraint firstItem="VE1-Ga-FWm" firstAttribute="bottom" secondItem="99r-b0-Ddj" secondAttribute="bottom" constant="120" id="bB5-ZC-d53"/>
@@ -308,12 +320,14 @@
                             <constraint firstItem="VE1-Ga-FWm" firstAttribute="trailing" secondItem="qlC-5g-pot" secondAttribute="trailing" constant="20" id="c8t-AY-EJV"/>
                             <constraint firstAttribute="bottom" secondItem="6Kw-h5-9td" secondAttribute="bottom" id="isE-yM-rEf"/>
                             <constraint firstItem="6Kw-h5-9td" firstAttribute="leading" secondItem="VE1-Ga-FWm" secondAttribute="leading" id="se2-yj-Nm6"/>
+                            <constraint firstItem="ljA-Qe-Cnq" firstAttribute="centerX" secondItem="y6n-8r-JOo" secondAttribute="centerX" id="zVi-bW-gCn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VE1-Ga-FWm"/>
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="qlC-5g-pot" id="Yrz-RW-fbk"/>
                         <outlet property="doneButton" destination="0gS-X2-5xO" id="c4j-MB-KWB"/>
+                        <outlet property="goButton" destination="ljA-Qe-Cnq" id="Vp8-KZ-OUb"/>
                         <outlet property="mapPinImage" destination="c4u-Gm-1sn" id="lkh-tU-3tS"/>
                         <outlet property="mapView" destination="6Kw-h5-9td" id="yrN-ps-hBS"/>
                     </connections>
@@ -500,6 +514,7 @@
     </scenes>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="GetDirection" width="50" height="50"/>
         <image name="Location" width="128" height="128"/>
         <image name="Photo" width="195" height="196"/>
         <image name="Pin" width="42" height="42"/>
